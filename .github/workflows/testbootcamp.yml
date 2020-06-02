@@ -28,7 +28,7 @@ jobs:
         node version: 12
     # Runs a set of commands using the runners shell
     - name: instal surge
-      run: npm install --global surge
+      run: npm install -g surge
 
     - name: deployement
       run: surge ./ index2020.surge.sh --token $ {{ secrets.FIRSTSECRET2020 }}
